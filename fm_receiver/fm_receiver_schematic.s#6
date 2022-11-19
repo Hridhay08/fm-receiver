@@ -1949,40 +1949,40 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <plain>
 </plain>
 <instances>
-<instance part="SLIDESWITCH" gate="G$1" x="35.56" y="35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="30.48" y="38.862" size="1.778" layer="95" font="vector"/>
+<instance part="SLIDESWITCH" gate="G$1" x="22.86" y="35.56" smashed="yes" rot="R270">
+<attribute name="NAME" x="17.78" y="38.862" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="3.7_5_BOOST" gate="G$1" x="114.3" y="60.96" smashed="yes" rot="R180"/>
+<instance part="3.7_5_BOOST" gate="G$1" x="116.84" y="38.1" smashed="yes" rot="R180"/>
 <instance part="ATMEGA328P" gate="U1" x="2.54" y="-20.32" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-15.24" y="-49.022" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="FM_RECEIVER" gate="G$1" x="99.06" y="-7.62" smashed="yes"/>
-<instance part="FREQ_POTENTIOMETER" gate="G$1" x="60.96" y="-5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="45.974" y="-13.462" size="1.778" layer="95"/>
+<instance part="FM_RECEIVER" gate="G$1" x="58.928" y="-30.988" smashed="yes"/>
+<instance part="FREQ_POTENTIOMETER" gate="G$1" x="38.1" y="-45.72" smashed="yes" rot="R270">
+<attribute name="NAME" x="23.114" y="-54.102" size="1.778" layer="95"/>
 </instance>
-<instance part="ANTENNA" gate="G$1" x="127" y="0" smashed="yes"/>
+<instance part="ANTENNA" gate="G$1" x="86.868" y="-23.368" smashed="yes"/>
 <instance part="LM386_MODULE" gate="G$1" x="167.64" y="-7.62" smashed="yes"/>
-<instance part="PWR_SUPPLY" gate="G$1" x="5.08" y="63.5" smashed="yes"/>
-<instance part="3.3V_REGULATOR" gate="G$1" x="91.44" y="50.8" smashed="yes"/>
+<instance part="PWR_SUPPLY" gate="G$1" x="-2.54" y="43.18" smashed="yes"/>
+<instance part="3.3V_REGULATOR" gate="G$1" x="91.44" y="91.44" smashed="yes"/>
 <instance part="SPEAKER" gate="G$1" x="208.28" y="-10.16" smashed="yes">
 <attribute name="NAME" x="210.82" y="-4.826" size="1.27" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="210.82" y="-15.494" size="1.27" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="R1" gate="G$1" x="129.54" y="-15.494" smashed="yes">
-<attribute name="NAME" x="129.54" y="-13.97" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="129.54" y="-17.018" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="R1" gate="G$1" x="89.408" y="-38.862" smashed="yes">
+<attribute name="NAME" x="89.408" y="-37.338" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="89.408" y="-40.386" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R2" gate="G$1" x="129.54" y="-18.542" smashed="yes">
-<attribute name="NAME" x="129.54" y="-17.018" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="129.54" y="-20.066" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="R2" gate="G$1" x="89.408" y="-41.91" smashed="yes">
+<attribute name="NAME" x="89.408" y="-40.386" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="89.408" y="-43.434" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="C1" gate="G$1" x="111.76" y="22.86" smashed="yes">
 <attribute name="NAME" x="113.284" y="25.781" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="113.284" y="20.701" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R3" gate="G$1" x="25.4" y="27.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.876" y="27.94" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="26.924" y="27.94" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R3" gate="G$1" x="-25.4" y="27.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="-26.924" y="27.94" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-23.876" y="27.94" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -1991,14 +1991,14 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <net name="3.7V_UNREG" class="0">
 <segment>
 <pinref part="3.3V_REGULATOR" gate="G$1" pin="VIN"/>
-<wire x1="81.28" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="33.02" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="73.66" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="3.7_5_BOOST" gate="G$1" pin="VIN+"/>
-<wire x1="71.12" y1="35.56" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="63.5" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="35.56" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="40.64" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
 <label x="76.2" y="66.04" size="1.778" layer="95"/>
 <pinref part="SLIDESWITCH" gate="G$1" pin="OUT1"/>
-<wire x1="42.418" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="29.718" y1="35.56" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
 <junction x="71.12" y="35.56"/>
 </segment>
 </net>
@@ -2013,121 +2013,151 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <segment>
 <pinref part="FM_RECEIVER" gate="G$1" pin="L"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="119.06" y1="-15.62" x2="124.46" y2="-15.62" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="-15.62" x2="124.46" y2="-15.494" width="0.1524" layer="91"/>
+<wire x1="78.928" y1="-38.988" x2="84.328" y2="-38.988" width="0.1524" layer="91"/>
+<wire x1="84.328" y1="-38.988" x2="84.328" y2="-38.862" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="FM_RECEIVER" gate="G$1" pin="R"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="119.06" y1="-18.62" x2="124.46" y2="-18.62" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="-18.62" x2="124.46" y2="-18.542" width="0.1524" layer="91"/>
+<wire x1="78.928" y1="-41.988" x2="84.328" y2="-41.988" width="0.1524" layer="91"/>
+<wire x1="84.328" y1="-41.988" x2="84.328" y2="-41.91" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="-15.494" x2="134.62" y2="-17.018" width="0.1524" layer="91"/>
+<wire x1="94.488" y1="-38.862" x2="94.488" y2="-40.386" width="0.1524" layer="91"/>
 <pinref part="LM386_MODULE" gate="G$1" pin="VIN"/>
-<wire x1="134.62" y1="-17.018" x2="134.62" y2="-18.542" width="0.1524" layer="91"/>
+<wire x1="94.488" y1="-40.386" x2="94.488" y2="-41.91" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="-7.62" x2="152.4" y2="-17.018" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="-17.018" x2="134.62" y2="-17.018" width="0.1524" layer="91"/>
-<junction x="134.62" y="-17.018"/>
+<wire x1="152.4" y1="-17.018" x2="94.488" y2="-40.386" width="0.1524" layer="91"/>
+<junction x="94.488" y="-40.386"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="ANTENNA" gate="G$1" pin="OUT"/>
 <pinref part="FM_RECEIVER" gate="G$1" pin="ANT"/>
-<wire x1="127" y1="-7.62" x2="127" y2="-9.62" width="0.1524" layer="91"/>
-<wire x1="127" y1="-9.62" x2="119.06" y2="-9.62" width="0.1524" layer="91"/>
+<wire x1="86.868" y1="-30.988" x2="86.868" y2="-32.988" width="0.1524" layer="91"/>
+<wire x1="86.868" y1="-32.988" x2="78.928" y2="-32.988" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC_5V_BOOST" class="0">
 <segment>
 <pinref part="3.7_5_BOOST" gate="G$1" pin="VOUT+"/>
 <pinref part="LM386_MODULE" gate="G$1" pin="VCC"/>
-<wire x1="129.54" y1="63.5" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="63.5" x2="167.64" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="40.64" x2="167.64" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="40.64" x2="167.64" y2="5.08" width="0.1524" layer="91"/>
 <label x="172.72" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC_3.3V" class="0">
 <segment>
 <pinref part="3.3V_REGULATOR" gate="G$1" pin="OUT"/>
-<wire x1="86.36" y1="33.02" x2="86.36" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="FM_RECEIVER" gate="G$1" pin="VCC"/>
-<wire x1="86.36" y1="20.32" x2="86.36" y2="-21.62" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="-21.62" x2="95.06" y2="-21.62" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="73.66" x2="86.36" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="ATMEGA328P" gate="U1" pin="AVCC"/>
 <wire x1="-17.78" y1="-40.64" x2="-22.86" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="-40.64" x2="-30.48" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="-40.64" x2="-30.48" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="20.32" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-40.64" x2="-25.4" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-40.64" x2="-25.4" y2="20.32" width="0.1524" layer="91"/>
 <junction x="86.36" y="20.32"/>
 <pinref part="ATMEGA328P" gate="U1" pin="VCC"/>
-<wire x1="25.4" y1="20.32" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="20.32" x2="86.36" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="20.32" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="20.32" x2="50.8" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="20.32" x2="86.36" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-38.1" x2="-22.86" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="-38.1" x2="-22.86" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="-22.86" y="-40.64"/>
 <pinref part="FREQ_POTENTIOMETER" gate="G$1" pin="VIN"/>
-<wire x1="53.34" y1="0" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
-<junction x="53.34" y="20.32"/>
+<wire x1="30.48" y1="-40.64" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
+<junction x="30.48" y="20.32"/>
 <label x="88.9" y="20.32" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="20.32" x2="86.36" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="22.86" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
-<junction x="25.4" y="20.32"/>
+<wire x1="-25.4" y1="22.86" x2="-25.4" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-25.4" y="20.32"/>
+<pinref part="FM_RECEIVER" gate="G$1" pin="VCC"/>
+<wire x1="54.928" y1="-44.988" x2="50.8" y2="-44.988" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-44.988" x2="50.8" y2="20.32" width="0.1524" layer="91"/>
+<junction x="50.8" y="20.32"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="PWR_SUPPLY" gate="G$1" pin="VCC"/>
+<wire x1="15.24" y1="43.18" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="SLIDESWITCH" gate="G$1" pin="IN1"/>
+</segment>
+</net>
+<net name="RESET" class="0">
+<segment>
+<pinref part="SLIDESWITCH" gate="G$1" pin="IN2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="33.02" x2="-25.4" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="33.02" x2="-33.02" y2="33.02" width="0.1524" layer="91"/>
+<junction x="-25.4" y="33.02"/>
+<pinref part="ATMEGA328P" gate="U1" pin="PC6(/RESET)"/>
+<wire x1="-33.02" y1="33.02" x2="-33.02" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-45.72" x2="-17.78" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-2.54" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="FREQ_POTENTIOMETER" gate="G$1" pin="OUT"/>
+<pinref part="ATMEGA328P" gate="U1" pin="PC0(ADC0)"/>
+<wire x1="30.48" y1="-45.72" x2="25.4" y2="-45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="ATMEGA328P" gate="U1" pin="PC4(ADC4/SDA)"/>
+<wire x1="25.4" y1="-35.56" x2="40.64" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-35.56" x2="40.64" y2="-32.988" width="0.1524" layer="91"/>
+<pinref part="FM_RECEIVER" gate="G$1" pin="SDA"/>
+<wire x1="40.64" y1="-32.988" x2="54.928" y2="-32.988" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="FM_RECEIVER" gate="G$1" pin="SCL"/>
+<wire x1="54.928" y1="-35.988" x2="43.18" y2="-35.988" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-35.988" x2="43.18" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-30.48" x2="25.4" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="ATMEGA328P" gate="U1" pin="PC5(ADC5/SCL)"/>
+<wire x1="25.4" y1="-30.48" x2="25.4" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="3.3V_REGULATOR" gate="G$1" pin="GND"/>
-<wire x1="91.44" y1="33.02" x2="91.44" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="27.94" x2="-12.7" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="27.94" x2="-12.7" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="PWR_SUPPLY" gate="G$1" pin="GND"/>
-<wire x1="-12.7" y1="58.42" x2="-12.7" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="63.5" x2="-10.16" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="3.7_5_BOOST" gate="G$1" pin="VIN-"/>
-<wire x1="99.06" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
-<junction x="-12.7" y="58.42"/>
-<pinref part="3.7_5_BOOST" gate="G$1" pin="VOUT-"/>
-<wire x1="96.52" y1="58.42" x2="-12.7" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="58.42" x2="134.62" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="58.42" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="50.8" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
-<junction x="96.52" y="58.42"/>
-<pinref part="FREQ_POTENTIOMETER" gate="G$1" pin="GND"/>
-<wire x1="53.34" y1="-10.16" x2="53.34" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-15.24" x2="73.66" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-15.24" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
-<junction x="73.66" y="27.94"/>
+<wire x1="101.6" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="27.94" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="3.3V_REGULATOR" gate="G$1" pin="GND"/>
+<wire x1="91.44" y1="73.66" x2="91.44" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="27.94" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="27.94" x2="-20.32" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="27.94" x2="-20.32" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="PWR_SUPPLY" gate="G$1" pin="GND"/>
+<wire x1="-20.32" y1="43.18" x2="-17.78" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="ATMEGA328P" gate="U1" pin="GND"/>
-<wire x1="-17.78" y1="12.7" x2="-22.86" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="12.7" x2="-22.86" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="27.94" x2="-12.7" y2="27.94" width="0.1524" layer="91"/>
-<junction x="-12.7" y="27.94"/>
-<wire x1="91.44" y1="27.94" x2="111.76" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="12.7" x2="-20.32" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="12.7" x2="-20.32" y2="27.94" width="0.1524" layer="91"/>
+<junction x="-20.32" y="27.94"/>
+<wire x1="91.44" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
 <junction x="91.44" y="27.94"/>
-<wire x1="111.76" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="27.94" x2="185.42" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="27.94" x2="111.76" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="27.94" x2="185.42" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="27.94" x2="195.58" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="27.94" x2="195.58" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="SPEAKER" gate="G$1" pin="GND"/>
 <wire x1="195.58" y1="-12.7" x2="198.12" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="FM_RECEIVER" gate="G$1" pin="GND"/>
-<wire x1="119.06" y1="-21.62" x2="137.16" y2="-21.62" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="-21.62" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
-<junction x="137.16" y="27.94"/>
 <pinref part="LM386_MODULE" gate="G$1" pin="GND_OUT"/>
 <wire x1="172.72" y1="-20.32" x2="185.42" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="-20.32" x2="185.42" y2="27.94" width="0.1524" layer="91"/>
@@ -2142,57 +2172,18 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <pinref part="C1" gate="G$1" pin="1"/>
 <junction x="111.76" y="27.94"/>
 <pinref part="SLIDESWITCH" gate="G$1" pin="OUT2"/>
-<wire x1="42.418" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="29.718" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="33.02" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
 <junction x="48.26" y="27.94"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="ATMEGA328P" gate="U1" pin="PC0(ADC0)"/>
-<wire x1="25.4" y1="-45.72" x2="48.26" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-45.72" x2="48.26" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="FREQ_POTENTIOMETER" gate="G$1" pin="OUT"/>
-<wire x1="48.26" y1="-5.08" x2="53.34" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="ATMEGA328P" gate="U1" pin="PC4(ADC4/SDA)"/>
-<wire x1="25.4" y1="-35.56" x2="81.28" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-35.56" x2="81.28" y2="-9.62" width="0.1524" layer="91"/>
-<pinref part="FM_RECEIVER" gate="G$1" pin="SDA"/>
-<wire x1="81.28" y1="-9.62" x2="95.06" y2="-9.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="ATMEGA328P" gate="U1" pin="PC5(ADC5/SCL)"/>
-<wire x1="25.4" y1="-33.02" x2="83.82" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="FM_RECEIVER" gate="G$1" pin="SCL"/>
-<wire x1="83.82" y1="-33.02" x2="83.82" y2="-12.62" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="-12.62" x2="95.06" y2="-12.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="PWR_SUPPLY" gate="G$1" pin="VCC"/>
-<wire x1="22.86" y1="63.5" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="SLIDESWITCH" gate="G$1" pin="IN1"/>
-<wire x1="22.86" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="RESET" class="0">
-<segment>
-<pinref part="SLIDESWITCH" gate="G$1" pin="IN2"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="33.02" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="33.02" x2="-48.26" y2="33.02" width="0.1524" layer="91"/>
-<junction x="25.4" y="33.02"/>
-<pinref part="ATMEGA328P" gate="U1" pin="PC6(/RESET)"/>
-<wire x1="-48.26" y1="33.02" x2="-48.26" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="-45.72" x2="-17.78" y2="-45.72" width="0.1524" layer="91"/>
-<label x="10.16" y="35.56" size="1.778" layer="95"/>
+<pinref part="FREQ_POTENTIOMETER" gate="G$1" pin="GND"/>
+<wire x1="30.48" y1="-50.8" x2="30.48" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-55.88" x2="45.72" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-55.88" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
+<junction x="45.72" y="27.94"/>
+<junction x="99.06" y="27.94"/>
+<pinref part="3.7_5_BOOST" gate="G$1" pin="VOUT-"/>
+<wire x1="132.08" y1="35.56" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
+<junction x="132.08" y="27.94"/>
 </segment>
 </net>
 </nets>

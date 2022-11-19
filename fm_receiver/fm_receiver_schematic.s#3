@@ -3070,9 +3070,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="104.14" y="37.084" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="104.14" y="34.036" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R6" gate="G$1" x="-33.02" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="-34.544" y="20.32" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="-31.496" y="20.32" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R6" gate="G$1" x="-33.02" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="-34.544" y="17.78" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-31.496" y="17.78" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -3094,35 +3094,39 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="35.56" y="35.56"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="SPKR_IN" class="0">
 <segment>
 <pinref part="LM386_MODULE" gate="G$1" pin="OUT"/>
 <pinref part="SPEAKER" gate="G$1" pin="VIN"/>
 <wire x1="81.28" y1="-27.94" x2="106.68" y2="-27.94" width="0.1524" layer="91"/>
+<label x="88.9" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="LEFT_OUT" class="0">
 <segment>
 <pinref part="FM_RECEIVER" gate="G$1" pin="L"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="78.928" y1="1.652" x2="84.328" y2="1.652" width="0.1524" layer="91"/>
 <wire x1="84.328" y1="1.652" x2="84.328" y2="1.778" width="0.1524" layer="91"/>
+<label x="78.74" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="RIGHT_OUT" class="0">
 <segment>
 <pinref part="FM_RECEIVER" gate="G$1" pin="R"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="78.928" y1="-1.348" x2="84.328" y2="-1.348" width="0.1524" layer="91"/>
 <wire x1="84.328" y1="-1.348" x2="84.328" y2="-1.27" width="0.1524" layer="91"/>
+<label x="78.486" y="-0.762" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="ANT" class="0">
 <segment>
 <pinref part="ANTENNA" gate="G$1" pin="OUT"/>
 <pinref part="FM_RECEIVER" gate="G$1" pin="ANT"/>
 <wire x1="81.788" y1="9.652" x2="81.788" y2="7.652" width="0.1524" layer="91"/>
 <wire x1="81.788" y1="7.652" x2="78.928" y2="7.652" width="0.1524" layer="91"/>
+<label x="83.82" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC_5V_BOOST" class="0">
@@ -3176,8 +3180,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="50.8" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
 <junction x="50.8" y="50.8"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="-33.02" y1="15.24" x2="-27.94" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="15.24" x2="-27.94" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="12.7" x2="-27.94" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="12.7" x2="-27.94" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="20.32" x2="-25.4" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3197,11 +3201,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-33.02" y="33.02"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="FRQ_IN" class="0">
 <segment>
 <pinref part="FREQ_POTENTIOMETER" gate="G$1" pin="OUT"/>
 <pinref part="ATMEGA328P" gate="U1" pin="PC0(ADC0)"/>
 <wire x1="30.48" y1="-45.72" x2="25.4" y2="-45.72" width="0.1524" layer="91"/>
+<label x="25.4" y="-47.752" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3269,16 +3274,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="104.14" y="27.94"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="SDA" class="0">
 <segment>
 <pinref part="FM_RECEIVER" gate="G$1" pin="SDA"/>
 <wire x1="54.928" y1="7.652" x2="38.1" y2="7.652" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="7.652" x2="38.1" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="ATMEGA328P" gate="U1" pin="PC4(ADC4/SDA)"/>
 <wire x1="38.1" y1="-35.56" x2="25.4" y2="-35.56" width="0.1524" layer="91"/>
+<label x="38.1" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="SCL" class="0">
 <segment>
 <pinref part="FM_RECEIVER" gate="G$1" pin="SCL"/>
 <wire x1="54.928" y1="4.652" x2="54.928" y2="5.08" width="0.1524" layer="91"/>
@@ -3286,9 +3292,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="40.64" y1="5.08" x2="40.64" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="ATMEGA328P" gate="U1" pin="PC5(ADC5/SCL)"/>
 <wire x1="40.64" y1="-33.02" x2="25.4" y2="-33.02" width="0.1524" layer="91"/>
+<label x="40.64" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="MONO_IN" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -3300,6 +3307,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="96.52" y1="-10.16" x2="96.52" y2="0.254" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="0.254" x2="94.488" y2="0.254" width="0.1524" layer="91"/>
 <junction x="94.488" y="0.254"/>
+<label x="53.34" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3327,6 +3335,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="D3" gate="D1" pin="A"/>
+<wire x1="-33.02" y1="22.86" x2="-33.02" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
