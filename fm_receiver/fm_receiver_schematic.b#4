@@ -717,7 +717,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <description>RDA</description>
 <packages>
 <package name="RDA">
-<rectangle x1="0" y1="-12" x2="11" y2="0" layer="21"/>
 <smd name="SDA" x="0" y="-1.5" dx="2.54" dy="1.27" layer="1"/>
 <smd name="SCL" x="0" y="-3.7" dx="2.54" dy="1.27" layer="1"/>
 <smd name="N/C" x="0" y="-5.9" dx="2.54" dy="1.27" layer="1"/>
@@ -728,6 +727,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="L" x="11" y="-5.9" dx="2.54" dy="1.27" layer="1"/>
 <smd name="R" x="11" y="-8.1" dx="2.54" dy="1.27" layer="1"/>
 <smd name="GND" x="11" y="-10.3" dx="2.54" dy="1.27" layer="1"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-11.938" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-11.938" x2="9.652" y2="-11.938" width="0.127" layer="21"/>
+<wire x1="9.652" y1="-11.938" x2="9.652" y2="0" width="0.127" layer="21"/>
+<wire x1="9.652" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
+<text x="1.651" y="-2.032" size="0.8128" layer="21">SDA</text>
+<text x="1.778" y="-4.191" size="0.8128" layer="21">SCL</text>
+<text x="1.778" y="-10.795" size="0.8128" layer="21">VCC</text>
+<text x="6.731" y="-10.795" size="0.8128" layer="21">GND</text>
+<text x="8.382" y="-8.636" size="0.8128" layer="21">R</text>
+<text x="1.778" y="-6.35" size="0.8128" layer="21">NC</text>
+<text x="1.778" y="-8.509" size="0.8128" layer="21">NC</text>
+<text x="7.493" y="-4.064" size="0.8128" layer="21">NC</text>
+<text x="6.985" y="-2.286" size="0.8128" layer="21">ANT</text>
+<text x="8.509" y="-6.35" size="0.8128" layer="21">L</text>
+<text x="5.969" y="-8.89" size="1.016" layer="21" rot="R90">RDA5807</text>
 </package>
 </packages>
 </library>
