@@ -1,0 +1,28 @@
+Main:
+	Begin at 106.5MHz.
+	infinite loop:
+		Perform downward run till reaching within 87.1 and 87 MHz. Once between 87.1 MHz and 87 MHz, clamp it to 87 MHz. Any further change, break out from function.
+		Then, perform upward run till reaching within 106.4 and 106.5 MHz. Once between 106.4 and 106.5, clamp it to 106.5. Any further change, break out from function.
+	end loop
+
+Downward run:
+	Wait till potentiometer at one of the extremes 0 and 1023. Register when potentiometer reaches the extreme, and note it.
+	Take chunks of 0.8 MHz starting from 106.5 MHz.
+	Divide the scope from extreme to extreme into 8 checkpoints. with each checkpoint, associate a particular frequency, 0.1MHz from previous.
+	loop:
+		if potentiometer is at a checkpoint within 0.1MHz of 87 MHz, clamp to 87 MHz.
+		if potentiometer is at a checkpoint that says less than 87 MHz, break from loop.
+		if potentiometer reaches the other extreme, jump back to beginning of loop, take the next lower 0.8 MHz chunk, change to opposite extreme, repeat.
+		otherwise, if potentiometer crosses a checkpoint and is "behind" the other checkpoint, tune to that frequency.
+	end loop
+
+Upward run:
+	Wait till potentiometer at one of the extremes 0 and 1023. Register when potentiometer reaches the extreme, and note it.
+	Take chunks of 0.8 MHz starting from 87MHz MHz.
+	Divide the scope from extreme to extreme into 8 checkpoints. with each checkpoint, associate a particular frequency, 0.1MHz from previous.
+	loop:
+		if potentiometer is at a checkpoint within 0.1MHz of 106.5 MHz, clamp to 106.5 MHz.
+		if potentiometer is at a checkpoint that says greater than 106.5MHz, break from loop.
+		if potentiometer reaches the other extreme, jump back to beginning of loop, take the next upper 0.8 MHz chunk, change to opposite extreme, repeat.
+		otherwise, if potentiometer crosses a checkpoint and is "behind" the other checkpoint, tune to that frequency.
+	end loop
